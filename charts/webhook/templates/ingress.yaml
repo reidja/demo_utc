@@ -1,0 +1,33 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+ name: {{ include "webhook.fullname" . }}
+ annotations:
+   kubernetes.io/ingress.class: "public-iks-k8s-nginx"
+   nginx.ingress.kubernetes.io/rewrite-target: /$1
+spec:
+ tls:
+ - hosts:
+   - jrdemo-c4a24be17d2b0bfc980895fd31267ec3-0000.mon01.containers.appdomain.cloud
+   secretName: jrdemo-c4a24be17d2b0bfc980895fd31267ec3-0000
+ rules:
+ - host: jrdemo-c4a24be17d2b0bfc980895fd31267ec3-0000.mon01.containers.appdomain.cloud
+   http:
+     paths:
+     - path: /(openapi.json)
+       pathType: Prefix
+       backend:
+        service:
+          name: {{ include "webhook.fullname" . }}
+          port:
+            number: 80
+ - host: jrdemo-c4a24be17d2b0bfc980895fd31267ec3-0000.mon01.containers.appdomain.cloud
+   http:
+     paths:
+     - path: /api/(.*)
+       pathType: Prefix
+       backend:
+        service:
+          name: {{ include "webhook.fullname" . }}
+          port:
+            number: 80

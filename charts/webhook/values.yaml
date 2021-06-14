@@ -1,0 +1,13 @@
+replicaCount: 3
+
+webhook:
+  image: ca.icr.io/interview/webhook:1.0.0
+  imagePullPolicy: IfNotPresent
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+service:
+  type: ClusterIP
+  port: 80

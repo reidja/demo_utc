@@ -1,0 +1,22 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Interview Chatbot",
+		"_postman_id": "cf20bd30-9997-791e-1a6c-48927b253604",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Request UTC time for America/Toronto timezone",
+			"request": {
+				"url": "http://localhost:8000/v1/webhook",
+				"method": "POST",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,13 @@
+replicaCount: 3
+
+resume:
+  image: ca.icr.io/interview/resume:1.0.0
+  imagePullPolicy: Always
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+service:
+  type: ClusterIP
+  port: 80

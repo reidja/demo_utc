@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Jason Reid - Resume</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Resume for Jason Reid">
+  </head>
+  <body>
+    <nav class="navbar is-link" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <span class="navbar-item"><strong class="has-text-white mr-1">Jason Reid</strong> - Resume</span>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-end">
+          <a class="navbar-item has-text-weight-medium" href="https://github.com/reidja">
+            <img class="mr-2" src="/assets/github-small.png" alt="GitHub Logo"> GitHub
+          </a>
+      </div>
+    </nav>
+
+    <div class="container is-max-desktop">
+      <div class="content px-3 pt-2 mb-0 is-flex is-align-items-center">
+        Jump to: <a href="#education" class="button ml-2 mr-1">Education</a> <a href="#workexperience" class="button m-1">Work Experience</a> <a href="#projects" class="button m-1">Projects</a>
+      </div>
+      <hr class="mt-1" />
+      <section class="section">
+        <p class="title">Interview Bot</p>
+        <hr />
+        <div class="content">
+          <p>I have configured an IBM Watson Assistant to help you with any interview questions you may have.</p>
+          <p>Here are some examples:</p>
+          
+          <div class="content">
+            <ul>
+              <li>What is your experience with NodeJS?</li>
+              <li>What is your favourite movie?</li>
+              <li>Tell me about Slot Filling</li>
+              <li>What time is it? <small>(this is a webhook to a Kubernetes microservice)</small></li>
+            </ul>
+          <div>
+          <article class="message is-info">
+            <div class="message-header">
+              <p>Source Code and Deployment</p>
+            </div>
+            <div class="message-body">
+              <p>The code for this resume, and the webhook is available on <a href="https://github.com/reidja/">GitHub</a>.</p>
+              <p>This resume and the webhook are depolyed to a Kubernetes cluster running on IBM Cloud.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      
+      <hr />
+
+      <section class="section">
+        <a name="education"></a>
+        <h1 class="title">Education</h1>
+        <div class="content">
+          <ul>
+            <li>Computer Engineering and Computer Science - Algonquin College <span class="tag is-light">2012</span></li>
+            <li>Project Management - NAV CANADA <span class="tag is-light">2016</span></li>
+            <li>SAFe Product Owner and Project Manager - NAV CANADA <span class="tag is-light">2018</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="section">
+        <a name="workexperience"></a>
+        <h1 class="title">Work Experience</h1>
+        <div class="content">
+          <h2 class="subtitle">Solution Architect</h2>
+          <span>NAV CANADA - Ottawa <span class="tag is-light">2020 - Present</span></span>
+          <ul>
+            <li>Evaluate corporate solution architecture proposals and coordinate with teams to ensure they are delivering high-quality, performant, secure and standard compliant systems.</li>
+            <li>Evaluate new technologies for corporate use through the design and implementation of proof of concepts. Focused primarily on cloud and low-code solutions. </li>
+            <li>Develop corporate standards for application architecture - providing process documentation, mentorship, and training.</li>
+          </ul>
+          
+          <h2 class="subtitle">Senior Systems Design and Software Development Specialist</h2>
+          <span>NAV CANADA - Ottawa <span class="tag is-light">2015 - 2020</span></span>
+          <ul>
+            <li>Technical lead and product owner for a variety of operational systems and services</li>
+            <li>Facilitated project management, planning, and requirement analysis</li>
+            <li>Facilitated safety process management, hazard identification, and risk assessment</li>
+            <li>Recruitment, training, and mentorship of new developers</li>
+            <li>Engineering consultation for the commercialization of internal products</li>
+            <li>Participation in international events involving the FAA, and Eurocontrol</li>
+            <li>Member of the Engineering Architecture Committee</li>
+            <li>Microservices for the dissemination and query of aeronautical data</li>
+            <li>Real-time data delivery services for big weather data</li>
+            <li>Air-gapped Kubernetes clusters</li>
+            <li>PostgreSQL database clusters</li>
+            <li>Adaptable and mobile-friendly user interface platform for internal systems</li>
+          </ul>
+          
+          <h2 class="subtitle">Software Developer</h2>
+          <span>NAV CANADA - Ottawa <span class="tag is-light">2011 - 2015</span></span>
+          <ul>
+            <li>Graphical web-based flight planning and weather briefing maps for public usage</li>
+            <li>Geospatial parsers for aeronautical and weather data products</li>
+            <li>Deployment of containerized clusters, applications, databases, and queues</li>
+            <li>Deployment of continuous integration for testing, builds, and deployment</li> 
+          </ul>
+          
+          <h2 class="subtitle">Software Developer</h2>
+          <span>Cisco Systems - Ottawa <span class="tag is-light">2010 - 2011</span></span>
+          <ul>
+            <li>Developed validation and verification tools for ASIC microchip analysis</li>
+            <li>Developed libraries for XML-RPC communication between verification services</li>
+          </ul>
+        </div>
+      </section>
+      
+      <hr />
+      
+      <section class="section">
+        <a name="projects"></a>
+        <h1 class="title">Projects</h1>
+        <div class="content">
+          <h2 class="subtitle">Drone Evaluation Tool <span class="tag is-light">Solution Architect - 2021</span></h2>
+          <figure class="image">
+            <img src="/assets/kraken.png" alt="Screenshot of Kraken">
+          </figure>
+          <p>Solution architecture design and implementation for a proof of concept to evaluate the Microsoft PowerApp (low code) solution utilizing custom code components. Display real-time drone and aircraft telemetry on a map embedded within the PowerApp framework.</p>
+          <span class="is-italic has-text-weight-medium">JavaScript, C#, Leaflet, PixiJS, Microsoft PowerApps, Azure Kubernetes Service</span>
+          
+          <h2 class="subtitle">RPA - Remote Process Automation <span class="tag is-light">Solution Architect - 2021</span></h2>
+          <p>Solution architecture design and implementation for the usage of RPA to automate operational positions. Two-way automated interaction with pilots over SMS.</p>
+          <span class="is-italic has-text-weight-medium">JavaScript, PostgreSQL, RPA, Azure Kubernetes Service, Twilio, UiPath</span>
+          
+          <h2 class="subtitle">AeroView <span class="tag is-light">Software Developer - 2020</span></h2>
+          <figure class="image">
+            <img src="/assets/aeroview.png" alt="Screenshot of AeroView">
+          </figure>
+          <p>Design, implementation, and delivery of a public facing system for the dissemination of wind and runway information for pilots and controllers.</p>
+          <span class="is-italic has-text-weight-medium">Python, PostgreSQL, NGINX</span>
+          
+          <h2 class="subtitle">SPACES - Operational Dashboard <span class="tag is-light">Technical Lead + Product Owner - 2020</span></h2>
+          <p>Design, implementation, and delivery of an adaptable, widget-based, and mobile-friendly dashboard. Used as a UI platform to deliver several other operational systems.</p>
+          <span class="is-italic has-text-weight-medium">VueJS, Material UI, JavaScript (ES6), Kubernetes, Helm, Docker, Python, PostgreSQL, NGINX</span>
+          
+          <h2 class="subtitle">CLDN - Canadian Lightning Detection Network <span class="tag is-light">Technical Lead + Product Owner - 2019</span></h2>
+          <figure class="image">
+            <img src="/assets/cldn.png" alt="Screenshot of CLDN">
+          </figure>
+          <p>Design, implementation, and delivery of an operational system for the distribution of real-time lighting data to hundreds of internal clients.</p>
+          <span class="is-italic has-text-weight-medium">Kubernetes, Helm, Docker, Python, C, PostgreSQL, Protobuf, AMQP, NGINX</span>
+          
+          <h2 class="subtitle">WXRS - Weather Radar Service <span class="tag is-light">Technical Lead + Product Owner - 2019</span></h2>
+          <figure class="image">
+            <img src="/assets/wxrs.png" alt="Screenshot of WXRS">
+          </figure>
+          <p>Design, implementation, and delivery of a weather RADAR processor that converts RADAR volumetric data into 2D rasterized imagery that can be tiled on web-maps.</p>
+          <span class="is-italic has-text-weight-medium">Python, PostgreSQL, NGINX</span>
+          
+          <h2 class="subtitle">NQS - NOTAM Query System <span class="tag is-light">Technical Lead + Product Owner - 2018</span></h2>
+          <p>Design, implementation, and delivery of a geospatial service for the storage and query of alerts for pilots. Delivery of data over web protocols and request-reply queues.</p>
+          <span class="is-italic has-text-weight-medium">Kubernetes, Helm, Docker, Python, PostgreSQL, AMQP, NGINX</span>
+          
+          <h2 class="subtitle">PostgreSQL Cluster <span class="tag is-light">Technical Lead + Product Owner - 2018</span></h2>
+          <p>Design, implementation, and delivery of a reusable, highly available PostgreSQL cluster for our internal Kubernetes environments.</p>
+          <span class="is-italic has-text-weight-medium">PostgreSQL, PGBouncer, Kubernetes, Helm, Docker, Python</span>
+          
+          <h2 class="subtitle">NC-K8S - Kubernetes Cluster <span class="tag is-light">Technical Lead + Product Owner - 2017</span></h2>
+          <p>Design, implementation, and delivery of a custom-built Kubernetes cluster in an air-gapped operational environment. Configured with high availability, automatic failover, offsite backups, and remote monitoring.</p>
+          <span class="is-italic has-text-weight-medium">Ansible, Kubernetes, Helm, Docker, Python, PostgreSQL, NGINX</span>
+          
+          <h2 class="subtitle">CFPS - Collaborative Flight Planning Services <span class="tag is-light">Technical Lead - 2011-2017</span></h2>
+          <figure class="image">
+            <img src="/assets/cfps.png" alt="Screenshot of CFPS">
+          </figure>
+          <p>Design, implementation, and delivery of a public-facing flight planning and weather briefing system for pilots, controllers, and dispatchers. Real-time data processing and graphical web maps. Processing, validation, and delivery of thousands of different aeronautical data products.</p>
+          <span class="is-italic has-text-weight-medium">Ansible, Docker, Python, Django, JavaScript, Leaflet, Rust, RabbitMQ, PostgreSQL, NGINX, C, Go, VMWare</span>
+        </div>
+      </section>
+      
+      <hr />
+    
+    </div>
+    
+    <footer class="footer mt-3">
+      <div class="content has-text-centered">
+        <p>
+          <strong>Thank You</strong> for your consideration.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: "3c1b04fb-a312-4f29-95fc-9aa19001cba7", // The ID of this integration.
+        region: "us-east", // The region your integration is hosted in.
+        serviceInstanceID: "e29fe5ec-1c04-4908-b991-be13f14f6ac7", // The ID of your service instance.
+        context: {
+          timezone: 'America/Toronto'
+        },
+        onLoad: function(instance) { instance.render(); instance.openWindow(); }
+      };
+      setTimeout(function(){
+        const t=document.createElement('script');
+        t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+        document.head.appendChild(t);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+services:
+  webhook:
+    build: webhook/
+    image: $REGISTRY/webhook:1.0.0
+    ports:
+      - 8000:8000
+  resume:
+    build: resume/
+    image: $REGISTRY/resume:1.0.0
+    ports:
+      - 8001:80

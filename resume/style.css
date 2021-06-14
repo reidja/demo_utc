@@ -1,0 +1,13 @@
+/* .home-menu {
+  background-color: red;
+} */
+
+section.section {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+figure img {
+  -webkit-box-shadow: 4px 5px 14px 3px rgba(0,0,0,0.31); 
+  box-shadow: 4px 5px 14px 3px rgba(0,0,0,0.31);
+}
